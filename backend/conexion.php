@@ -1,5 +1,4 @@
 <?php
-// Configuración de base de datos usando variables de entorno de Railway
 $host = getenv('MYSQL_HOST') ?: 'localhost';
 $db = getenv('MYSQL_DATABASE') ?: 'warmi360';
 $user = getenv('MYSQL_USER') ?: 'root';

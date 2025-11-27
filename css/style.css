@@ -124,3 +124,87 @@ footer {
     color: var(--blanco);
     margin-top: 50px;
 }
+/* ================= RESPONSIVO ================= */
+
+/* 📱 MÓVIL (pantallas < 768px) */
+@media (max-width: 767px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header .logo {
+        height: 45px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila el menú */
+        gap: 10px;
+        align-items: center;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* 📱→🖥️ TABLET (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 12px 30px;
+    }
+
+    header .logo {
+        height: 50px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    main {
+        padding: 30px 25px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+/* 💻 PANTALLA GRANDE (≥ 1024px) */
+/* → Ya cubierto por los estilos base, pero si quieres ajustar para pantallas muy anchas: */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
