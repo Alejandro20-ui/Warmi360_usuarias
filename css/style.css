@@ -162,6 +162,13 @@ footer {
     header .logo {
         height: 45px;
     }
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar-brand img.logo {
+        height: 45px;
+    }
 
     nav ul {
         flex-direction: column;
