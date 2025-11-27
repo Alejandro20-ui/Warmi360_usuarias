@@ -81,7 +81,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-md-3 text-center">
                 <div class="card border-0 shadow-sm p-4">
                     <img src="../img/Lynn.jpg" class="rounded-circle mb-3" width="200" alt="Miembro del equipo">
-                    <h6 class="fw-bold">Lyn Jhong Donayre</h6>
+                    <h6 class="fw-bold">Lynn Jhong Donayre</h6>
                     <small class="text-muted">Desarrolladora Desktop</small>
                     <p class="text-muted small">Desarrolladora de la plataforma de escritorio</p>
                 </div>
