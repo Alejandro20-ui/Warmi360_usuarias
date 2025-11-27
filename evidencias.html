@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evidencias - WARMI360</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #tablaEvidencias img { max-width: 100px; height: auto; }
+        #tablaEvidencias video { max-width: 150px; }
+        .btn-descarga { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" class="logo" onclick="location.href='index.html'">
+    <nav>
+        <ul>
+            <li><a href="php/principal.php">Inicio</a></li>
+            <li><a href="php/anillo.php">Anillo</a></li>
+            <li><a class="dropdown-item" href="php/logout.php">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Evidencias Registradas</h1>
+    
+    <table id="tablaEvidencias">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>Archivo</th>
+                <th>Fecha</th>
+                <th>Descargar</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2025 WARMI360</p>
+</footer>
+<script src="js/evidencias.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* WARMI360 – Estilos Globales */
+:root {
+    --rosa-claro: #FFC0CB;
+    --rosa-fuerte: #FF1493;
+    --lavanda: #E6E6FA;
+    --morado: #800080;
+    --blanco: #FFFFFF;
+    --gris-claro: #F5F5F5;
+    --gris-oscuro: #333333;
+    --verde-pago: #28a745;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(120deg, var(--lavanda), var(--rosa-claro));
+    color: var(--gris-oscuro);
+    line-height: 1.6;
+}
+
+/* HEADER Y NAVBAR */
+header {
+    background-color: var(--rosa-fuerte);
+    color: var(--blanco);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    height: 55px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--lavanda);
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    padding: 50px;
+}
+
+h1, h2 {
+    color: var(--rosa-fuerte);
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--morado);
+    margin-bottom: 10px;
+}
+
+/* PRODUCTO Y FORMULARIOS */
+.card {
+    border-radius: 10px;
+}
+
+.custom-bg-info {
+    background-color: var(--lavanda);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 2px solid var(--rosa-claro);
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--rosa-fuerte);
+    color: var(--blanco);
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--morado);
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--rosa-fuerte);
+    color: var(--blanco);
+    margin-top: 50px;
+}
