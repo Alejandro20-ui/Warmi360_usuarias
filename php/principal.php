@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 <body class="custom-bg-light">
 
 <header>
-    <img src="../img/logo.png" class="logo" onclick="location.href='principal.php'">
+    <img src="../img/warmilogo.png" class="logo" onclick="location.href='principal.php'">
     <nav>
         <ul>
             <li><a href="principal.php">Inicio</a></li>

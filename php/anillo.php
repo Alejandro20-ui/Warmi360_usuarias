@@ -32,7 +32,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
 <body class="custom-bg-light">
 
 <header>
-    <img src="img/logo.png" class="logo" onclick="location.href='index.html'">
+    <img src="../img/warmilogo.png" class="logo" onclick="location.href='index.html'">
     <nav>
         <ul>
             <li><a href="principal.php">Inicio</a></li>
