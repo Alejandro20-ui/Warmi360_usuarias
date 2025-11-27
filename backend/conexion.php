@@ -1,9 +1,9 @@
 <?php
-$host = getenv('MYSQL_HOST') ?: 'localhost';
-$db = getenv('MYSQL_DATABASE') ?: 'warmi360';
+$host = getenv('MYSQL_HOST') ?: 'maglev.proxy.rlwy.net';
+$db = getenv('MYSQL_DATABASE') ?: 'alertamujer';
 $user = getenv('MYSQL_USER') ?: 'root';
-$pass = getenv('MYSQL_PASSWORD') ?: '';
-$port = getenv('MYSQL_PORT') ?: '3306';
+$pass = getenv('MYSQL_PASSWORD') ?: 'CZhVEBZHQRoZvxHsUoPlOrWgSTXnacGc';
+$port = getenv('MYSQL_PORT') ?: '50204';
 
 try {
     $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
