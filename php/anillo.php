@@ -26,6 +26,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/c476b3252a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/image.png" type="image/jpeg">
 </head>
 
 <body class="custom-bg-light">
