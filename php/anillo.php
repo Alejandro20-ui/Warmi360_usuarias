@@ -59,7 +59,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
 
                         <div class="d-flex align-items-center mb-3">
                             <label class="form-label me-3">Cantidad:</label>
-                            <div class="input-group" style="width: 150px;">
+                            <div class="input-group input-cantidad">
                                 <button class="btn custom-btn-purple" type="button" data-action="minus">
                                     -<i class="fas fa-minus text-white"></i>
                                 </button>

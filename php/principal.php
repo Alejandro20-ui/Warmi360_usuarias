@@ -100,7 +100,7 @@ if (!isset($_SESSION['user_id'])) {
 </main>
 
 <footer>
-    <p>&copy; 2025 WARMI360</p>
+    <p>&copy; 2025 WARMI360 - Todos los derechos reservados</p>
 </footer>
 
 <script src="../js/main.js"></script>

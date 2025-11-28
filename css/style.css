@@ -125,8 +125,6 @@ footer {
     margin-top: 50px;
 }
 
-/* =============== AJUSTES POR SECCIÓN =============== */
-
 /* Imágenes del equipo */
 #equipo img.rounded-circle {
     width: 100%;
@@ -148,8 +146,49 @@ footer {
     height: auto;
     object-fit: contain;
 }
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+#tablaEvidencias {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-/* =============== RESPONSIVO =============== */
+#tablaEvidencias th,
+#tablaEvidencias td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#tablaEvidencias th {
+    background-color: var(--rosa-fuerte);
+    color: white;
+}
+
+#tablaEvidencias img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+#tablaEvidencias video {
+    max-width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.btn-descarga {
+    color: var(--morado);
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* 📱 MÓVIL (hasta 767px) */
 @media (max-width: 767px) {
@@ -267,6 +306,71 @@ footer {
         padding: 15px 10px;
         font-size: 0.9em;
     }
+    .input-cantidad {
+    width: 120px !important;
+    }
+
+    /* Opcional: hacer los botones más pequeños */
+    .input-cantidad .btn {
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.9rem;
+    }
+    #qr {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    }
+    main {
+    padding: 20px 10px; /* más ajustado */
+    }
+
+    .card, .custom-bg-info {
+        padding: 15px !important;
+    }
+
+    /* Asegurar que los inputs y selects ocupen todo el ancho */
+    .form-control, .form-select {
+        font-size: 1rem;
+        padding: 0.6rem 0.75rem;
+    }
+
+    /* Botón de pago más compacto */
+    #btnPagar {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .col-md-6{
+        margin-bottom: 40px;
+    }
+    /* Forzar que la tabla no se salga */
+    #tablaEvidencias {
+        width: 100%;
+        font-size: 0.8rem;
+        border-collapse: collapse;
+    }
+
+    #tablaEvidencias th,
+    #tablaEvidencias td {
+        padding: 8px 4px; /* menos espacio interno */
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    #tablaEvidencias img {
+        max-width: 60px !important;
+        height: auto;
+    }
+    #tablaEvidencias video {
+    max-width: 80px !important;
+    height: auto;
+    }
+
+    /* Ajustar el enlace de descarga */
+    .btn-descarga {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
 }
 
 /* 📱→🖥️ TABLET (768px – 991px) */
@@ -316,6 +420,22 @@ footer {
 
     #articulos .card-body {
         text-align: center;
+    }
+    #tablaEvidencias {
+        font-size: 0.9rem;
+    }
+
+    #tablaEvidencias th,
+    #tablaEvidencias td {
+        padding: 10px 6px;
+    }
+
+    #tablaEvidencias img {
+        max-width: 80px;
+    }
+
+    #tablaEvidencias video {
+        max-width: 100px;
     }
 }
 
