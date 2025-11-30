@@ -23,8 +23,10 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anillo Inteligente - WARMI360</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.5.1/ol.css">
     <script src="https://kit.fontawesome.com/c476b3252a.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/image.png" type="image/jpeg">
 </head>
@@ -61,11 +63,11 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
                             <label class="form-label me-3">Cantidad:</label>
                             <div class="input-group input-cantidad">
                                 <button class="btn custom-btn-purple" type="button" data-action="minus">
-                                    -<i class="fas fa-minus text-white"></i>
+                                    <i class="fas fa-minus text-white"></i>
                                 </button>
                                 <input type="number" id="cantidad" class="form-control text-center" value="1" readonly>
                                 <button class="btn custom-btn-purple" type="button" data-action="plus">
-                                    +<i class="fas fa-plus text-white"></i>
+                                    <i class="fas fa-plus text-white"></i>
                                 </button>
                             </div>
                         </div>
@@ -87,9 +89,17 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Dirección:</label>
-                        <input type="text" id="direccion" class="form-control" required>
-                    </div>
+                            <label class="form-label">Dirección:</label>
+                            <input type="text" id="direccion" class="form-control" required
+                                placeholder="Ingresa tu dirección">
+
+                            <input type="hidden" id="lat">
+                            <input type="hidden" id="lon">
+
+                            <!-- Lista de sugerencias -->
+                            <ul id="suggestions" class="list-group position-absolute w-100" style="z-index: 1000;"></ul>
+
+                        </div>
 
                     <div class="mb-3">
                         <label class="form-label">Método de pago:</label>
@@ -187,6 +197,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
 <footer>
     <p>&copy; 2025 WARMI360 - Todos los derechos reservados</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/ol@7.5.1/dist/ol.js"></script>
 <script src="../js/anillo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
