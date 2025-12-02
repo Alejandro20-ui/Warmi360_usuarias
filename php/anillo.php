@@ -142,7 +142,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
                 </div>
                 <div class="modal-body text-center">
                     <p><strong>Escanea el código QR</strong></p>
-                    <img src="img/qr_yape.png" alt="QR Yape" class="img-fluid my-3" style="max-width:200px;">
+                    <img src="../img/qryape.jpeg" alt="QR Yape" class="img-fluid my-3" style="max-width:200px;">
                     <p><small>Titular: WARMI360 SAC</small></p>
                 </div>
                 <div class="modal-footer">
@@ -162,7 +162,7 @@ $nombreCompleto = $usuario['nombre'] . ' ' . $usuario['apellidos'];
                 </div>
                 <div class="modal-body text-center">
                     <p><strong>Escanea el código QR</strong></p>
-                    <img src="img/qr_plin.png" alt="QR Plin" class="img-fluid my-3" style="max-width:200px;">
+                    <img src="../img/qrplin.jpeg" alt="QR Plin" class="img-fluid my-3" style="max-width:200px;">
                     <p><small>Titular: WARMI360 SAC</small></p>
                 </div>
                 <div class="modal-footer">
